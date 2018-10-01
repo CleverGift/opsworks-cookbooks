@@ -76,6 +76,9 @@ when 'debian','ubuntu'
   set[:mysql][:grants_path]              = '/etc/mysql/grants.sql'
 end
 
+
+Chef::Log.info("TEST debug node: #{node.inspect}")
+
 if infrastructure_class?('ec2')
   default[:mysql][:ec2_path]                 = '/mnt/mysql'
   default[:mysql][:opsworks_autofs_map_file] = '/etc/auto.opsworks'
