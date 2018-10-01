@@ -6,3 +6,4 @@ version     "1.0.0"
 
 depends "apache2"
 depends "nginx"
+depends "deploy"
